@@ -320,3 +320,23 @@ img.brakes {
 	letter-spacing: 0.9px;
 	padding: 1rem 3.5rem;
 }
+
+.colorpicker {
+	width: 50%;
+}
+.color-picker {
+	border-radius: 50%;
+	height: 25px;
+	width: 25px;
+}
+
+.color-state {
+	height: 50px;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 0.8px;
+}
+
+.color-previewer {
+	width: 100%;
+}
