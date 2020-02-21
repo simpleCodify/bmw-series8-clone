@@ -1,38 +1,322 @@
-.App {
-  text-align: center;
+html,
+body {
+	height: 100vh;
+	color: white;
+	line-height: 12px;
+	font-weight: 200;
+	-webkit-font-smoothing: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1.text-senses-h1 {
+	font-weight: 300 !important;
+	font-size: 56px;
+	letter-spacing: 0.25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h4 {
+	color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+	background-color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.head-image {
+	animation: zoominout 16s infinite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes zoominout {
+	0% {
+		transform: scale(1, 1);
+	}
+	50% {
+		transform: scale(1.1, 1.1);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
+
+.section-head {
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.section-texter {
+	font-size: 12px;
+	letter-spacing: 1.5px;
+	font-weight: 300;
+}
+
+.text-title {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	font-style: italic;
+	font-weight: 300;
+	top: 20%;
+	z-index: 1;
+}
+
+.text-senses {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	top: 40%;
+}
+
+.text-senses-bodypara {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	top: 50%;
+}
+
+.text-senses-body {
+	max-width: 645px;
+	margin: 0 auto;
+	font-weight: 200;
+	line-height: 26px;
+	letter-spacing: 0.5px;
+}
+
+.senses-footer {
+	position: absolute;
+	bottom: 20px;
+	max-height: 85px;
+	width: 100%;
+}
+
+img.bmw-logo {
+	height: 65px;
+	width: 100%;
+	object-fit: contain;
+}
+
+.carousel-caption {
+	position: relative;
+	left: auto;
+	right: auto;
+	height: 200px;
+}
+
+.carousel-indicators {
+	bottom: 15%;
+}
+
+.senses-footer-text {
+	font-size: 9px;
+	margin: 8px 0;
+	text-align: center;
+}
+
+.section-6 {
+	height: 100vh;
+}
+
+.scroll-line-div {
+	height: 250px;
+}
+.scroll-line {
+	width: 1px;
+	height: 100%;
+	background: #fff;
+	/* animation: scrollInTop 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; */
+}
+
+@keyframes scrollInTop {
+	0% {
+		transform: scaleY(0);
+		transform-origin: 100% 0%;
+		opacity: 1;
+	}
+	100% {
+		transform: scaleY(1);
+		transform-origin: 100% 0%;
+		opacity: 1;
+	}
+}
+
+.scrollInTop {
+	animation-name: scrollInTop;
+}
+
+.section-specs {
+	height: 123px;
+}
+
+h5.spec-title-font {
+	font-weight: 200;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 0.04rem;
+}
+.spec-title {
+	border-right: 1px solid white;
+	height: 100%;
+}
+
+.section-1 {
+	width: 100%;
+}
+
+.section-2 {
+	height: 225vh;
+	position: relative;
+	overflow: hidden;
+}
+
+img.engine-head {
+	position: absolute;
+	max-width: 60vw;
+	top: 5%;
+}
+
+img.glow-bg {
+	position: absolute;
+	left: -30%;
+	z-index: 1;
+}
+
+img.brakes {
+	position: absolute;
+	max-width: 60vw;
+	right: 0;
+	bottom: 13%;
+}
+
+.text-elements {
+	width: 25%;
+	line-height: 26px;
+	font-size: 14px;
+	text-align: center;
+}
+
+#bmw-carousel {
+	width: 70%;
+}
+
+.classic-cues-text {
+	width: 35%;
+	line-height: 26px;
+	letter-spacing: 0.6px;
+}
+
+.spacer {
+	height: 100px;
+}
+
+.section-4 {
+	width: 36%;
+	line-height: 26px;
+	letter-spacing: 0.6px;
+}
+
+.text-awaiting {
+	position: absolute;
+	bottom: 45%;
+	left: 240px;
+	width: 20%;
+}
+
+.text-awaiting-right {
+	position: absolute;
+	bottom: 45%;
+	right: 120px;
+	width: 20%;
+}
+
+.descriptor-title {
+	font-weight: 300;
+	font-size: 22px;
+}
+
+.descriptor-text {
+	font-weight: 300;
+	font-size: 12px;
+	letter-spacing: 0.4px;
+	line-height: 20px;
+}
+
+.horizontal-line-leftside {
+	border-top: 1px solid white;
+	position: absolute;
+	top: 44.5%;
+	left: 5%;
+	width: 120px;
+}
+.horizontal-line-leftside2 {
+	border-top: 1px solid white;
+	position: absolute;
+	top: 44.5%;
+	left: 5%;
+	width: 120px;
+}
+
+.horizontal-line-rightside {
+	border-top: 1px solid white;
+	position: absolute;
+	top: 44.5%;
+	right: 28%;
+	width: 120px;
+}
+
+.section-7,
+.section-8,
+.section-9 {
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.power-center-text {
+	position: absolute;
+	top: 35%;
+	right: 10%;
+	width: 20%;
+}
+
+.power-center-line {
+	border-top: 1px solid white;
+	width: 120px;
+	position: absolute;
+	top: 35.4%;
+	right: 32%;
+}
+
+.maneuvering-text {
+	position: absolute;
+	top: 47%;
+	right: 37%;
+	width: 20%;
+}
+
+.maneuvering-line {
+	border-top: 1px solid white;
+	width: 120px;
+	position: absolute;
+	top: 47.4%;
+	right: 59%;
+}
+
+.stopping-power-text {
+	position: absolute;
+	top: 59%;
+	right: 64%;
+	width: 20%;
+}
+
+.stopping-power-line {
+	border-top: 1px solid white;
+	width: 120px;
+	position: absolute;
+	top: 59.4%;
+	right: 86%;
+}
+
+.btn-outline-light {
+	letter-spacing: 0.9px;
+	padding: 1rem 3.5rem;
 }
