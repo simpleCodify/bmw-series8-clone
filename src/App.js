@@ -128,7 +128,7 @@ class App extends Component {
 
 				{/* COLORPICKER */}
 				<div className="color-previewer mx-auto text-center">
-					<img className="mx-auto" src={this.state.imagesrc} />
+					<img className="mx-auto mb-4" src={this.state.imagesrc} />
 				</div>
 				<div className="colorpicker mx-auto text-center">
 					{colors.map(val => (
