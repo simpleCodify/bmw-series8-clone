@@ -105,7 +105,7 @@ class App extends Component {
 						</div>
 					</div>
 
-					<ScrollAnimation delay={2700} animateIn="fadeInUp" animateOnce={true} offset={-300}>
+					<ScrollAnimation delay={2700} animateIn="fadeInUp" animateOnce={true} offset={0}>
 						<div className="senses-footer">
 							<img
 								className="bmw-logo mx-auto"
