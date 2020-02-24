@@ -1,6 +1,6 @@
 html,
 body {
-	height: 100vh;
+	/* height: 100%; */
 	color: white;
 	line-height: 12px;
 	font-weight: 200;
@@ -23,6 +23,7 @@ body {
 
 .head-image {
 	animation: zoominout 16s infinite;
+	width: 100%;
 }
 
 @keyframes zoominout {
@@ -83,7 +84,7 @@ body {
 
 .senses-footer {
 	position: absolute;
-	bottom: 20px;
+	bottom: 80px;
 	max-height: 85px;
 	width: 100%;
 }
@@ -339,4 +340,258 @@ img.brakes {
 
 .color-previewer {
 	width: 100%;
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+	.scroll-line-div {
+		height: 90px;
+	}
+
+	h1.text-senses-h1 {
+		font-weight: 200 !important;
+		font-size: 36px;
+		letter-spacing: 0.25px;
+	}
+
+	.head-image {
+		width: auto;
+	}
+
+	.carousel-caption {
+		position: relative;
+		left: auto;
+		right: auto;
+		height: 200px;
+	}
+
+	.carousel-indicators {
+		bottom: 15%;
+	}
+
+	.section-6 {
+		height: 100vh;
+	}
+
+	h5.spec-title-font {
+		font-weight: 200;
+		font-size: 20px;
+		line-height: 24px;
+		letter-spacing: 0.04rem;
+	}
+	.spec-title {
+		border-right: none;
+		border-bottom: 1px solid white;
+		margin-bottom: 25px;
+		height: 100%;
+	}
+
+	.spec-summary {
+		font-size: 12px;
+		line-height: 20px;
+	}
+
+	.section-specs {
+		margin-bottom: 1000px;
+		height: auto;
+	}
+
+	.specs-speed {
+		margin-bottom: 20px;
+	}
+
+	.section-1 {
+		height: 100%;
+	}
+
+	.section-2 {
+		height: 130vh;
+	}
+
+	img.engine-head {
+		position: absolute;
+		max-width: 130vw;
+		top: 0%;
+	}
+
+	img.glow-bg {
+		position: absolute;
+		width: 200%;
+		top: 16%;
+		z-index: 1;
+	}
+
+	img.brakes {
+		position: absolute;
+		max-width: 130vw;
+		top: 55%;
+	}
+
+	.text-elements {
+		width: 80%;
+		line-height: 26px;
+		font-size: 14px;
+		text-align: center;
+	}
+
+	#bmw-carousel {
+		width: 90%;
+	}
+
+	.classic-cues-text {
+		width: 85%;
+		line-height: 26px;
+		letter-spacing: 0.6px;
+		font-size: 14px;
+	}
+
+	.spacer {
+		height: 20px;
+	}
+
+	.section-4 {
+		width: 80%;
+		line-height: 26px;
+		letter-spacing: 0.6px;
+	}
+
+	.sec4-title {
+		font-size: 22px;
+	}
+	.sec4-text {
+		font-size: 14px;
+		letter-spacing: 0.3px;
+	}
+
+	video.dash-hud {
+		width: 140%;
+		height: auto;
+		margin-left: -200px;
+	}
+
+	.seat-img {
+		width: 140%;
+		height: auto;
+	}
+
+	.shift-img {
+		width: 140%;
+		height: auto;
+	}
+
+	.text-awaiting {
+		position: absolute;
+		bottom: 0%;
+		width: 80%;
+		left: 5%;
+	}
+
+	.text-awaiting-right {
+		position: absolute;
+		bottom: 0%;
+		left: 5%;
+		width: 80%;
+	}
+
+	.descriptor-title {
+		font-weight: 200;
+		font-size: 18px;
+	}
+
+	.descriptor-text {
+		font-weight: 200;
+		font-size: 12px;
+		letter-spacing: 0.4px;
+		line-height: 20px;
+	}
+
+	.horizontal-line-leftside,
+	.horizontal-line-leftside2,
+	.horizontal-line-rightside {
+		visibility: hidden;
+	}
+
+	.section-7,
+	.section-8,
+	.section-9 {
+		height: 45vh;
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.power-center-text {
+		position: absolute;
+		width: 86%;
+		top: 25%;
+		left: 5%;
+	}
+
+	.power-center-line {
+		visibility: hidden;
+	}
+
+	.maneuvering-text {
+		position: absolute;
+		width: 86%;
+		top: 44%;
+		left: 5%;
+	}
+
+	.maneuvering-line {
+		visibility: hidden;
+	}
+
+	.stopping-power-text {
+		position: absolute;
+		top: 63%;
+		left: 5%;
+		width: 86%;
+	}
+
+	.stopping-power-line {
+		visibility: hidden;
+	}
+
+	.btn-outline-light {
+		letter-spacing: 0.9px;
+		padding: 1rem 3.5rem;
+	}
+
+	.color-previewer {
+		max-width: 100%;
+		overflow: hidden;
+	}
+
+	.colorpicker {
+		width: 100%;
+	}
+	.color-picker {
+		border-radius: 50%;
+		height: 25px;
+		width: 25px;
+	}
+
+	.color-state {
+		height: 50px;
+		font-size: 12px;
+		font-weight: 600;
+		letter-spacing: 0.8px;
+	}
+
+	img.car-color {
+		width: 120%;
+	}
+
+	.make-title {
+		font-size: 21px;
+	}
+
+	.make-text {
+		font-size: 14px;
+		letter-spacing: 0.1px;
+	}
+
+	.spacer-2 {
+		height: 60px;
+	}
 }

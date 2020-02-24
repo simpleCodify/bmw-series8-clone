@@ -79,24 +79,24 @@ class App extends Component {
 			}
 		];
 		return (
-			<div>
+			<>
 				<div className="section-head">
 					<div className="text-title">
-						<ScrollAnimation delay={1200} animateOnce={true} animateIn="fadeInUp">
+						<ScrollAnimation delay={1200} animateOnce={true} animateIn="fadeInUp" offset={0}>
 							<p>THE 8 SERIES COUPE</p>
 						</ScrollAnimation>
 					</div>
-					<ScrollAnimation delay={800} animateOnce={true} animateIn="fadeIn">
-						<Image className="head-image w-100" src="https://www.bmwusa.com/content/dam/bmwusa/8Series/BMW-MY19-8Series-Overview-Hero.jpg" />
+					<ScrollAnimation delay={800} animateOnce={true} animateIn="fadeIn" offset={0}>
+						<Image className="head-image" src="https://www.bmwusa.com/content/dam/bmwusa/8Series/BMW-MY19-8Series-Overview-Hero.jpg" />
 					</ScrollAnimation>
 					<div className="text-senses">
-						<ScrollAnimation delay={1700} animateIn="fadeInUp">
+						<ScrollAnimation delay={1700} animateIn="fadeInUp" animateOnce={true} offset={0}>
 							<h1 className="text-senses-h1">SENSES ENGAGED</h1>
 						</ScrollAnimation>
 					</div>
 					<div className="text-senses-bodypara">
 						<div className="text-senses-body">
-							<ScrollAnimation delay={2200} animateOnce={true} animateIn="fadeInUp">
+							<ScrollAnimation delay={2200} animateOnce={true} animateIn="fadeInUp" offset={0}>
 								<p>
 									There’s something inside us that drives us to achieve more. To evolve beyond our senses. To embrace the unattainable before anyone else.
 									<br />
@@ -122,17 +122,18 @@ class App extends Component {
 						<div className="scroll-line mx-auto my-3"></div>
 					</div>
 				</ScrollAnimation>
+
 				<div className="mx-auto my-5 text-center">
-					<p className="my-5">CHOOSE YOUR 8 SERIES COUPE</p>
+					<p className="my-5 choose-text">CHOOSE YOUR 8 SERIES COUPE</p>
 				</div>
 
 				{/* COLORPICKER */}
 				<div className="color-previewer mx-auto text-center">
-					<img className="mx-auto mb-4" src={this.state.imagesrc} />
+					<img className="car-color mx-auto mb-4" src={this.state.imagesrc} />
 				</div>
 				<div className="colorpicker mx-auto text-center">
 					{colors.map(val => (
-						<button className={val.name === this.state.colorname ? "selected color-picker mx-2" : "color-picker mx-2"} type="button" name={val.name} value={val.image} onClick={this.buttonSelected} style={{backgroundColor: `rgb(${val.hex})`}}></button>
+						<button className={val.name === this.state.colorname ? "selected color-picker mx-2" : "color-picker mx-2"} type="button" name={val.name} value={val.image} onClick={this.buttonSelected} style={{ backgroundColor: `rgb(${val.hex})` }}></button>
 					))}
 				</div>
 				<div className="color-state text-center my-3">{this.state.colorname}</div>
@@ -141,15 +142,15 @@ class App extends Component {
 
 				<div className="section-specs my-5 w-100">
 					<Row>
-						<Col className="spec-title">
+						<Col className="spec-title" xs={12} md={6}>
 							<div className="specs-sum pl-5">
 								<h5 className="spec-title-font">THE SOPHISTICATE</h5>
 								<br />
-								<p>Experience the newest icon of luxurious sportiness in the BMW 840i Coupe and 840i xDrive Coupe.</p>
+								<p className="spec-summary">Experience the newest icon of luxurious sportiness in the BMW 840i Coupe and 840i xDrive Coupe.</p>
 							</div>
 						</Col>
 
-						<Col>
+						<Col className="specs-speed">
 							<div className="pl-5">
 								<Row>
 									<div className="col-4"></div>
@@ -269,8 +270,10 @@ class App extends Component {
 				</ScrollAnimation>
 
 				<div className="section-4 my-4 mb-5 mx-auto text-center">
-					<h3 style={{ fontWeight: "200" }}>CATCH THE EYE, CAPTURE THE IMAGINATION</h3>
-					<p>Driving information at a glance. Refined seats crafted for your comfort. Command and control - all effortless. In an 8 Series Coupe, the world is yours.</p>
+					<h3 style={{ fontWeight: "200" }} className="sec4-title">
+						CATCH THE EYE, CAPTURE THE IMAGINATION
+					</h3>
+					<p className="sec4-text">Driving information at a glance. Refined seats crafted for your comfort. Command and control - all effortless. In an 8 Series Coupe, the world is yours.</p>
 				</div>
 
 				<ScrollAnimation delay={1000} animateIn="fadeIn" animateOnce={true} duration={2.5}>
@@ -281,7 +284,7 @@ class App extends Component {
 							<p className="descriptor-text">BMW’s latest iDrive system features a redesigned interface with customizable interactions – which you can control by touch, voice commands, or with optional Gesture Control.</p>
 						</div>
 
-						<video muted loop autoPlay className="dash-hud w-100">
+						<video muted loop autoPlay className="dash-hud ">
 							<source src="https://www.bmwusa.com/content/dam/bmwusa/8Series/BMW-8Series-iDrive-Animation-gradient-2000x930-web.mp4" type="video/mp4" />
 						</video>
 					</div>
@@ -293,7 +296,7 @@ class App extends Component {
 							<h4 className="descriptor-title">TAKE YOUR SEAT</h4>
 							<p className="descriptor-text">The available Multi-Functional Seats are designed to meet the demands of performance driving. Yet they’re clad in your choice of supple Extended or Full Merino Leather for an extra touch of luxury.</p>
 						</div>
-						<img src="https://www.bmwusa.com/content/dam/bmwusa/8Series/BMW-MY19-8Series-Overview-Tech-02-2000x930.jpg" />
+						<img className="seat-img" src="https://www.bmwusa.com/content/dam/bmwusa/8Series/BMW-MY19-8Series-Overview-Tech-02-2000x930.jpg" />
 					</div>
 				</ScrollAnimation>
 				<ScrollAnimation delay={1000} animateOnce={true} animateIn="fadeIn" duration={2.5}>
@@ -303,10 +306,10 @@ class App extends Component {
 							<h4 className="descriptor-title">A REFINED TOUCH</h4>
 							<p className="descriptor-text">The 8 Series Coupe is more than a tactile experience. Even the driver-oriented controls, with available Glass Controls, are designed to engage every sense to the fullest.</p>
 						</div>
-						<img align="right" src="https://www.bmwusa.com/content/dam/bmwusa/8Series/BMW-MY19-8Series-Overview-Tech-03-2000x930.jpg" id="shift-img" />
+						<img align="right" src="https://www.bmwusa.com/content/dam/bmwusa/8Series/BMW-MY19-8Series-Overview-Tech-03-2000x930.jpg" className="shift-img" />
 					</div>
 				</ScrollAnimation>
-				<div className="spacer"></div>
+				<div className="spacer spacer-2"></div>
 				<p className="text-center section-texter">EXPERIENCE THE 8 SERIES COUPE</p>
 
 				<ScrollAnimation animateIn="scrollInTop" animateOnce={true}>
@@ -316,8 +319,10 @@ class App extends Component {
 				</ScrollAnimation>
 
 				<div className="section-4 my-4 mb-5 mx-auto text-center">
-					<h3 style={{ fontWeight: "200" }}>MAKE IT YOURS</h3>
-					<p>An enthralling experience awaits you in the BMW 8 Series Coupe. Schedule your test drive at a local BMW Center today.</p>
+					<h3 className="make-title" style={{ fontWeight: "200" }}>
+						MAKE IT YOURS
+					</h3>
+					<p className="make-text">An enthralling experience awaits you in the BMW 8 Series Coupe. Schedule your test drive at a local BMW Center today.</p>
 				</div>
 
 				<div className="button-testdrive text-center">
@@ -326,7 +331,7 @@ class App extends Component {
 
 				<img className="w-100" src="https://www.bmwusa.com/content/dam/bmwusa/8Series/BMW-MY19-8Series-Overview-Drive-M850xi.jpg.bmwimg.xlarge.jpg" />
 				{/* END */}
-			</div>
+			</>
 		);
 	}
 }
