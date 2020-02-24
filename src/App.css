@@ -505,6 +505,7 @@ img.brakes {
 	.descriptor-title {
 		font-weight: 200;
 		font-size: 18px;
+		z-index: 1;
 	}
 
 	.descriptor-text {
