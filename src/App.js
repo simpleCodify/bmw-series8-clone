@@ -4,7 +4,6 @@ import "./App.css";
 import { Image, Col, Row, Button } from "react-bootstrap";
 import SlideCarousel from "./components/SlideCarousel";
 import ScrollAnimation from "react-animate-on-scroll";
-import ColorButton from "./components/ColorButton";
 
 class App extends Component {
 	constructor(props) {

@@ -475,6 +475,7 @@ img.brakes {
 	video.dash-hud {
 		width: 140%;
 		height: auto;
+		z-index: 0;
 		margin-left: -200px;
 	}
 
@@ -493,6 +494,7 @@ img.brakes {
 		bottom: 0%;
 		width: 80%;
 		left: 5%;
+		z-index: 1;
 	}
 
 	.text-awaiting-right {
