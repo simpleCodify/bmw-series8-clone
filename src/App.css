@@ -352,6 +352,16 @@ img.brakes {
 		font-size: 36px;
 		letter-spacing: 0.25px;
 	}
+	.text-senses-bodypara {
+		width: 100%;
+	}
+	.text-senses-body {
+		text-align: center;
+		width: 90%;
+		font-size: 14px;
+		letter-spacing: 0.8px;
+		line-height: 22px;
+	}
 
 	.head-image {
 		width: auto;
