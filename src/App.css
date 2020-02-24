@@ -609,7 +609,7 @@ img.brakes {
 	}
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1224px) {
 	.scroll-line-div {
 		height: 90px;
 	}
