@@ -1,4 +1,4 @@
-#BMW's Series 8 Clone
+# BMW's Series 8 Clone
 Replicated the look and feel of BMW's Series 8 Overview landing page with React, JavaScript and Bootstrap while utilizing CSS3 animations and other libraries for seamless user-experience across different browsers and screen-sizes.
 
 ## **Instructions**:
