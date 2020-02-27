@@ -29,5 +29,6 @@ Replicated the look and feel of BMW's Series 8 Overview landing page with React,
 
 ### Take a look and compare!
 [Original Site](https://www.bmwusa.com/vehicles/8-series/coupe/overview.html)
+
 [Clone](https://master.dc3x97xfmpg16.amplifyapp.com/)
 
