@@ -19,6 +19,10 @@ class App extends Component {
 		this.setState({ colorname: e.target.name, imagesrc: e.target.value });
 	};
 
+	linkPressed = e => {
+		window.location.href='https://www.bmwusa.com/vehicles/8-series/coupe/test-drive.html'	
+	};
+
 	render() {
 		let colors = [
 			{
@@ -310,7 +314,7 @@ class App extends Component {
 				</div>
 
 				<div className="button-testdrive text-center">
-					<Button variant="outline-light">Test Drive</Button>
+					<Button variant="outline-light" onClick=linkPressed()>Test Drive</Button>
 				</div>
 
 				<img className="w-100" src="https://www.bmwusa.com/content/dam/bmwusa/8Series/BMW-MY19-8Series-Overview-Drive-M850xi.jpg.bmwimg.xlarge.jpg" />
