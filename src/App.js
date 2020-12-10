@@ -187,22 +187,7 @@ class App extends Component {
 					</Row>
 				</div>
 
-				<div className="section-1">
-					<p className="text-center my-5 section-texter">THE SENSE OF ANTICIPATION</p>
-					<ScrollAnimation animateIn="scrollInTop" animateOnce={true}>
-						<div className="scroll-line-div">
-							<div className="scroll-line mx-auto my-3"></div>
-						</div>
-					</ScrollAnimation>
-					<div className="bmw-video text-center">
-						<video className="bmw-video" height="90%" width="90%" controls src="blob:https://www.bmwusa.com/5702272d-b4b2-4832-b5f3-fa2329ebeb77"></video>
-					</div>
-					<ScrollAnimation animateIn="scrollInTop" animateOnce={true}>
-						<div className="scroll-line-div">
-							<div className="scroll-line mx-auto my-3"></div>
-						</div>
-					</ScrollAnimation>
-				</div>
+
 
 				<div className="section-2">
 					<ScrollAnimation animateIn="fadeIn" animateOnce={true} duration={1.5}>
